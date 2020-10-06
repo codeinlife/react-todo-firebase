@@ -1,4 +1,17 @@
+@mixin linearBackground($deg, $firstRgba, $secondRgba) {
+  background: linear-gradient($deg, $firstRgba, $secondRgba);
+}
+
+body {
+  @include linearBackground(
+    210deg,
+    rgba(40, 157, 133, 1) 0%,
+    rgba(231, 232, 51, 1) 100%
+  );
+}
+
 .container {
+  height: 100vh;
   margin-top: 20px;
 }
 
@@ -12,7 +25,7 @@
 .box {
   width: 100%;
   padding: 30px;
+  background-color: white;
   border: 1px solid #efefef;
   border-radius: 15px;
-  box-shadow: 2px 2px 2px 2px #7a7a7a;
 }

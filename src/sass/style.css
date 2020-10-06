@@ -1,4 +1,9 @@
+body {
+  background: linear-gradient(210deg, #289d85 0%, #e7e833 100%);
+}
+
 .container {
+  height: 100vh;
   margin-top: 20px;
 }
 
@@ -18,9 +23,8 @@
 .box {
   width: 100%;
   padding: 30px;
+  background-color: white;
   border: 1px solid #efefef;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 2px 2px 2px #7a7a7a;
-          box-shadow: 2px 2px 2px 2px #7a7a7a;
 }
 /*# sourceMappingURL=style.css.map */
